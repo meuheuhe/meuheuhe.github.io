@@ -1,8 +1,8 @@
 # Setup
-title: Dark Poole
-url: https://getpoole.com
-paginate: 1
-baseurl: ""
+title: KiJung's private.logs
+url: https://meuheuhe.github.io
+paginate: 5
+baseurl: "https://meuheuhe.github.io/"
 permalink: pretty
 
 # Gems
@@ -32,9 +32,9 @@ sass:
 
 # Specify the author for blog posts
 author:
-  name: Mark Otto
+  name: Kim Ki jung
   url: https://twitter.com/mdo
-  email: markdotto@gmail.com
+  email: rlarlwnd61@gmail.com
 
 # Custom vars
 version: 3.0.0
