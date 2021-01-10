@@ -2,7 +2,7 @@
 title: KiJung's private.logs
 url: https://meuheuhe.github.io
 paginate: 5
-baseurl: "https://meuheuhe.github.io/"
+baseurl: ""
 permalink: pretty
 
 # Gems
