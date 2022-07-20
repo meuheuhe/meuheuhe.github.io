@@ -1,6 +1,6 @@
 ---
 layout: post
-title: transformer(time series)
+title: transformer
 date: 2022-07-20
 category: 논문
 ---
