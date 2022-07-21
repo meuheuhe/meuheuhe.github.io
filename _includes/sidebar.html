@@ -7,17 +7,17 @@
   <meta name="Generator" content="Cocoa HTML Writer">
   <meta name="CocoaVersion" content="2113.5">
   <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9}
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #0000e9; -webkit-text-stroke: #0000e3}
     p.p2 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
     p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
-    p.p4 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px}
-    li.li1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9}
     li.li3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    li.li4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #0000e3; -webkit-text-stroke: #000000}
     span.s1 {text-decoration: underline ; font-kerning: none}
     span.s2 {font-kerning: none; color: #000000; -webkit-text-stroke: 0px #000000}
     span.s3 {font-kerning: none}
     span.s4 {-webkit-text-stroke: 0px #000000}
-    span.s5 {text-decoration: underline ; font-kerning: none; color: #0000e9}
+    span.s5 {text-decoration: underline ; font-kerning: none; color: #0000e3}
+    span.s6 {font-kerning: none; color: #000000}
     ul.ul1 {list-style-type: disc}
   </style>
 </head>
@@ -27,23 +27,24 @@
 <p class="p3"><span class="s3">{%- if social.github -%} {%- endif -%}<span class="Apple-converted-space"> </span></span></p>
 <ul class="ul1">
   <li class="li3"><span class="s4"></span><span class="s3">Pages</span></li>
-  <li class="li1"><span class="s4"><a href="file:///"><span class="s5">Articles</span></a></span><span class="s2"><span class="Apple-converted-space"> </span></span></li>
+  <li class="li4"><span class="s4"><a href="file:///"><span class="s5">Articles</span></a></span><span class="s6"><span class="Apple-converted-space"> </span></span></li>
   <li class="li3"><span class="s4"></span><span class="s3">{% assign pages_list = site.pages %} {% for node in pages_list %} {% if node.title != null %} {% if node.layout == "page" %}</span></li>
-  <li class="li1"><span class="s4"><a href="file:///Users/kimkijung/Desktop/git_io/meuheuhe/_includes/%7B%7B%20node.url%20%7D%7D"><span class="s5">{{ node.title }}<span class="Apple-converted-space"> </span></span></a></span></li>
+  <li class="li4"><span class="s4"><a href="file:///Users/kimkijung/Desktop/git_io/meuheuhe/_includes/%7B%7B%20node.url%20%7D%7D"><span class="s5">{{ node.title }}<span class="Apple-converted-space"> </span></span></a></span></li>
   <li class="li3"><span class="s4"></span><span class="s3">{% endif %} {% endif %} {% endfor %}<span class="Apple-converted-space"> </span></span></li>
 </ul>
 <ul class="ul1">
   <li class="li3"><span class="s4"></span><span class="s3">Python</span></li>
-  <li class="li3"><span class="s3">{% for category in site.categories %}</span></li>
-  <li class="li1"><span class="s4"><a href="file:///Users/kimkijung/Desktop/git_io/meuheuhe/_includes/%7B%7B%20root_url%20%7D%7D/%7B%7B%20site.category_dir%20%7D%7D#%7B%7B%20category%20%7C%20first%20%7D%7D"><span class="s5">{{ category | first }} {{ category | last | size }}<span class="Apple-converted-space"> </span></span></a></span></li>
-  <li class="li3"><span class="s3">{% endfor %}</span></li>
+  <li class="li3"><span class="s4"></span><span class="s3">{% for category in site.categories %}</span></li>
+  <li class="li4"><span class="s4"><a href="file:///Users/kimkijung/Desktop/git_io/meuheuhe/_includes/%7B%7B%20root_url%20%7D%7D/%7B%7B%20site.category_dir%20%7D%7D#%7B%7B%20category%20%7C%20first%20%7D%7D"><span class="s5">{{ python | first }} {{ python | last | size }}<span class="Apple-converted-space"> </span></span></a></span></li>
+  <li class="li3"><span class="s4"></span><span class="s3">{% endfor %}</span></li>
 </ul>
 <ul class="ul1">
   <li class="li3"><span class="s4"></span><span class="s3">Paper</span></li>
-  <li class="li3"><span class="s3">{% for category in site.categories %}</span></li>
-  <li class="li1"><span class="s4"><a href="file:///Users/kimkijung/Desktop/git_io/meuheuhe/_includes/%7B%7B%20root_url%20%7D%7D/%7B%7B%20site.category_dir%20%7D%7D#%7B%7B%20category%20%7C%20first%20%7D%7D"><span class="s5">{{ category | first }} {{ category | last | size }}<span class="Apple-converted-space"> </span></span></a></span></li>
-  <li class="li3"><span class="s3">{% endfor %}</span></li>
+  <li class="li3"><span class="s4"></span><span class="s3">{% for category in site.categories %}</span></li>
+  <li class="li4"><span class="s4"><a href="file:///Users/kimkijung/Desktop/git_io/meuheuhe/_includes/%7B%7B%20root_url%20%7D%7D/%7B%7B%20site.category_dir%20%7D%7D#%7B%7B%20category%20%7C%20first%20%7D%7D"><span class="s5">{{ paper | first }} {{ paper | last | size }}<span class="Apple-converted-space"> </span></span></a></span></li>
+  <li class="li3"><span class="s4"></span><span class="s3">{% endfor %}</span></li>
 </ul>
-<p class="p4"><span class="s3"></span><br></p>
+<p class="p2"><span class="s3"><br>
+</span></p>
 </body>
 </html>
