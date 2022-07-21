@@ -2,7 +2,7 @@
 layout: post
 title: transformer
 date: 2022-07-20
-category: paper
+paper: time series
 ---
 
 asdasd
