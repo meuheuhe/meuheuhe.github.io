@@ -35,6 +35,7 @@ date_format: "%Y-%M-%D"
 plugins:
   - jekyll-feed
 category_dir: category/
+python_dir: python/
 
 tag_dir: tag/
 
