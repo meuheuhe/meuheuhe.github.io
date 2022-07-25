@@ -43,28 +43,27 @@
 	    	</a>
  		</li>
 		<p>
-			asdasd
 		</p>
 	    {% endfor %}	
 	</nav>
 	</ul>
 </div>
 
-<!-- <div class="sidebar-item sidebar-nav">
+<div class="sidebar-item sidebar-nav">
 	<ul class="nav">
-		  <li class="nav-title">python</li>
-	  {% for category in site.python %}
+		  <li class="nav-title">paper</li>
+	  {% for paper in site.papers %}
 	  <li>
-		  <a class="nav-item" href="{{ root_url }}/{{ site.python_dir }}#{{ category | first }}">
-			  <span class="name">{{ category | first }}</span>
-			  <span class="badge">{{ category | last | size }}</span>
+		  <a class="nav-item" href="{{ root_url }}/{{ site.paper_dir }}#{{ paper | first }}">
+			  <span class="name">{{ paper | first }}</span>
+			  <span class="badge">{{ paper | last | size }}</span>
 		  </a>
 	   </li>
 	  {% endfor %}
 	</nav>
   </ul>
-</div> -->
+</div>
 
 <div class="sidebar-item sidebar-footer">
-	<p>Powered by <a href="https://github.com/jekyll/jekyll">kiju.ng</a></p>
+	<p>Powered by <a href="https://github.com/jekyll/jekyll">kijung</a></p>
 </div>
