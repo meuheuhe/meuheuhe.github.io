@@ -289,9 +289,8 @@ defaults:
       # layout: single
       # author_profile: true
       sidebar:
-        nav: "main"
-        url: "https://meuheuhe.github.io/"
-        text: 'test'
+        nav: "docs"
+        # url: "https://meuheuhe.github.io/"
       read_time: true
       comments: # true
       share: true
