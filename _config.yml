@@ -109,9 +109,6 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "끄적.."
   location         : "한국 어딘가.."
-sidebar:
-   title: "title"
-    nav: main
 
   email            :
   links:
@@ -294,6 +291,7 @@ defaults:
       sidebar:
         nav: "main"
         url: "https://meuheuhe.github.io/"
+        text: 'test'
       read_time: true
       comments: # true
       share: true
