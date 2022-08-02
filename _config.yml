@@ -286,8 +286,8 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: single
-      author_profile: true
+      # layout: single
+      # author_profile: true
       sidebar:
         nav: "main"
         url: "https://meuheuhe.github.io/"
