@@ -29,10 +29,7 @@ logo                     : # path of logo image to display in the masthead, e.g.
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
-sidebar:
-   title: "title"
-    nav: main
-    url: "https://meuheuhe.github.io/"
+
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
@@ -105,13 +102,17 @@ analytics:
     tracking_id          :
     anonymize_ip         : # true, false (default)
 
+sidebar:
+  - title: "title"
+    nav: main
+    url: "https://meuheuhe.github.io/"
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Meuheuhe.log"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  bio              : "끄적.."
+  location         : "한국 어딘가.."
   email            :
   links:
     - label: "Email"
