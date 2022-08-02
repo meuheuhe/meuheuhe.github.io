@@ -102,10 +102,6 @@ analytics:
     tracking_id          :
     anonymize_ip         : # true, false (default)
 
-sidebar:
-  - title: "title"
-    nav: main
-    url: "https://meuheuhe.github.io/"
 
 # Site Author
 author:
@@ -113,6 +109,10 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "끄적.."
   location         : "한국 어딘가.."
+sidebar:
+   title: "title"
+    nav: main
+
   email            :
   links:
     - label: "Email"
