@@ -293,3 +293,9 @@ defaults:
       share: false
       sidebar:
         nav: "docs"
+
+        
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:path/
