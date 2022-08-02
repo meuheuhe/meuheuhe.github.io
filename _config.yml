@@ -284,13 +284,13 @@ defaults:
   # _posts
   - scope:
       path: ""
-      type: posts
+      type: docs
     values:
-      # layout: single
-      # author_profile: true
+      layout: single
+      author_profile: true
       sidebar:
         nav: "docs"
-        # url: "https://meuheuhe.github.io/"
+        url: "https://meuheuhe.github.io/"
       read_time: true
       comments: # true
       share: true

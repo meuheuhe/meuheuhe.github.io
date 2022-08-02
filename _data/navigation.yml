@@ -3,5 +3,5 @@ docs:
   - title: "python"
     children:
       - title: "Numpy"
-        utl : python/
+        utl : docs/
         category: "python"
