@@ -15,10 +15,10 @@
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "en-KR"
 title                    : "Site Title"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : 맨날 까먹어서 시작
 name                     : "meuheuhe.log"
 description              : "An amazing website."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -102,56 +102,40 @@ analytics:
     tracking_id          :
     anonymize_ip         : # true, false (default)
 
-
 # Site Author
 author:
-  name             : "Meuheuhe.log"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "끄적.."
-  location         : "한국 어딘가.."
-
-  email            :
+  name             : *name # *name is a YAML reference pointing to the &anchor earlier
+  avatar           : "/assets/images/bluetigero.jpg"
+  bio              : "새로운 기술과 게임을 좋아합니다. 흰머리가 덥수룩하고 게을러서 백발코더 랍니다."
+  location         : "Republic of Korea"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:your.name@email.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://your-website.com"
+#    - label: "Made Mistakes"
+#      icon: "fas fa-fw fa-link"
+#      url: "https://mademistakes.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      url: "https://facebook.com/"
+      url: "https://twitter.com/_wonseok_"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/wonseoko"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin-in"
+      url: "https://www.linkedin.com/in/wonseoko/"
+
 
 # Site Footer
 footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
+      url: "https://twitter.com/_wonseok_"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url:
+      url: "https://github.com/wonseoko"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin-in"
+      url: "https://www.linkedin.com/in/wonseoko/"
+
 
 
 # Reading Files
@@ -179,12 +163,11 @@ exclude:
   - log
   - node_modules
   - package.json
-  - package-lock.json
   - Rakefile
   - README
   - tmp
-  - /docs # ignore Minimal Mistakes /docs
-  - /test # ignore Minimal Mistakes /test
+  - x-pages
+  - x-posts
 keep_files:
   - .git
   - .svn
@@ -212,17 +195,146 @@ kramdown:
   enable_coderay: false
 
 
+# Collections
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:path/
+  recipes:
+    output: true
+    permalink: /:collection/:path/
+  pets:
+    output: true
+    permalink: /:collection/:path/
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
+
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      show_date: true
+      comments: true
+      share: true
+      related: true
+      toc: true
+      toc_sticky: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  # _docs
+  - scope:
+      path: ""
+      type: docs
+    values:
+      layout: single
+      read_time: false
+      author_profile: false
+      share: false
+      comments: false
+      sidebar:
+        nav: "docs"
+  # rpi4cluster
+  - scope:
+      path: "rpi4cluster"
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      show_date: true
+      comments: true
+      share: true
+      related: true
+      toc: true
+      toc_sticky: true
+      sidebar:
+        nav: "rpi4cluster"      
+      header:
+        teaser: /assets/images/unsplash/rpi4-rZKdS0wI8Ks.jpg
+        overlay_image: /assets/images/unsplash/rpi4-rZKdS0wI8Ks.jpg
+        overlay_filter: 0.4
+        caption: "Photo credit: [**Unsplash**](https://unsplash.com/photos/rZKdS0wI8Ks)"
+  # jekyll
+  - scope:
+      path: "jekyll"
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      show_date: true
+      comments: true
+      share: true
+      related: true
+      toc: true
+      toc_sticky: true
+      # header:
+      #   teaser: /assets/images/unsplash/rpi4-rZKdS0wI8Ks.jpg
+      #   overlay_image: /assets/images/unsplash/rpi4-rZKdS0wI8Ks.jpg
+      #   overlay_filter: 0.4
+      #   caption: "Photo credit: [**Unsplash**](https://unsplash.com/photos/rZKdS0wI8Ks)"
+  # owaf
+  - scope:
+      path: "owaf"
+    values:
+      layout: single
+      author_profile: false
+      read_time: true
+      show_date: true
+      comments: true
+      share: true
+      related: true
+      toc: true
+      toc_sticky: true
+      sidebar:
+        nav: "owaf"      
+      header:
+        overlay_image: /assets/images/unsplash/cpp-UjJWhMerJx0.jpg
+        overlay_filter: 0.4
+        caption: "Photo credit: [**Unsplash**](https://unsplash.com/photos/UjJWhMerJx0)"
+  # portfolio
+  - scope:
+      path: ""
+      type: "portfolio"
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      show_date: false
+      comments: true
+      share: true
+      related: true
+      toc: false
+      toc_sticky: true
+      classes: wide
+      header:
+      #   teaser: /assets/images/unsplash/rpi4-rZKdS0wI8Ks.jpg
+        overlay_image: https://source.unsplash.com/featured/?portfolio
+        overlay_filter: 0.4
+        caption: "Photo credit: [**Unsplash**](https://source.unsplash.com/featured/?portfolio)"
+
 # Sass/SCSS
 sass:
   sass_dir: _sass
-  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+# paginate: 5 # amount of posts to show
+# paginate_path: /page:num/
+timezone: Asia/Seoul # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)
@@ -231,7 +343,9 @@ plugins:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
+  - jemoji
   - jekyll-include-cache
+  - jekyll-algolia
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -239,7 +353,9 @@ whitelist:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
+  - jemoji
   - jekyll-include-cache
+  - jekyll-algolia
 
 
 # Archives
@@ -272,30 +388,8 @@ tag_archive:
 
 
 # HTML Compression
-# - https://jch.penibelst.de/
+# - http://jch.penibelst.de/
 compress_html:
   clippings: all
   ignore:
     envs: development
-
-
-# Defaults
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: docs
-    values:
-      layout: single
-      author_profile: false
-      read_time: true
-      comments: # true
-      share: false
-      sidebar:
-        nav: "docs"
-
-        
-collections:
-  docs:
-    output: true
-    permalink: /:collection/:path/
