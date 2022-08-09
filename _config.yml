@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 locale                   : "ko_KR"
 title                    : "Meuheuhe"
 title_separator          : "-"
-subtitle                 : "까먹을까봐 기록해두는 곳" # site tagline that appears below site title in masthead
+subtitle                 : "까먹을까봐 기록해두는 곳." # site tagline that appears below site title in masthead
 name                     : "Kijung"
 description              : "잘 까먹어서 기록하는 용도" # "An amazing website."
 url                      : "https://meuheuhe.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
