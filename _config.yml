@@ -10,30 +10,29 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-# theme                  : "minimal-mistakes-jekyll"
-# remote_theme           : "mmistakes/minimal-mistakes"
+theme                  : "minimal-mistakes-jekyll"
+remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-KR"
-title                    : "Site Title"
+locale                   : "ko_KR"
+title                    : "Meuheuhe"
 title_separator          : "-"
-subtitle                 : 맨날 까먹어서 시작
-name                     : "meuheuhe.log"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+subtitle                 : "까먹을까봐 기록해두는 곳" # site tagline that appears below site title in masthead
+name                     : "Kijung"
+description              : "잘 까먹어서 기록하는 용도" # "An amazing website."
+url                      : "https://meuheuhe.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "meuheuhe/meuheuhe.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
-
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
+  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : "meuheuhe-github-io" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -44,27 +43,31 @@ comments:
   utterances:
     theme                : # "github-light" (default), "github-dark"
     issue_term           : # "pathname" (default)
-  giscus:
-    repo_id              : # Shown during giscus setup at https://giscus.app
-    category_name        : # Full text name of the category
-    category_id          : # Shown during giscus setup at https://giscus.app
-    discussion_term      : # "pathname" (default), "url", "title", "og:title"
-    reactions_enabled    : # '1' for enabled (default), '0' for disabled
-    theme                : # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
-  staticman:
-    branch               : # "master"
-    endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
+staticman:
+  allowedFields          : # ['name', 'email', 'url', 'message']
+  branch                 : # "master"
+  commitMessage          : # "New comment by {fields.name}"
+  filename               : # comment-{@timestamp}
+  format                 : # "yml"
+  moderation             : # true
+  path                   : # "/_data/comments/{options.slug}" (default)
+  requiredFields         : # ['name', 'email', 'message']
+  transforms:
+    email                : # "md5"
+  generatedFields:
+    date:
+      type               : # "date"
+      options:
+        format           : # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
+  endpoint               : # URL of your own deployment with trailing slash, will fallback to the public instance
 reCaptcha:
   siteKey                :
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-  hide                   : # true, false (default)
-search                   : # true, false (default)
-search_full_content      : # true, false (default)
+search                   : true # true, false (default)
+search_full_content      : true # true, false (default)
 search_provider          : # lunr (default), algolia, google
-lunr:
-  search_within_pages    : # true, false (default)
 algolia:
   application_id         : # YOUR_APPLICATION_ID
   index_name             : # YOUR_INDEX_NAME
@@ -74,11 +77,10 @@ google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
 # SEO Related
-google_site_verification :
+google_site_verification : sqnzB-sZCiTlSdwBGKKduykVH3NzH07e2UXjN_qWhuU
 bing_site_verification   :
-naver_site_verification  :
 yandex_site_verification :
-baidu_site_verification  :
+naver_site_verification  : 11d076f47d37d336f05cc8aa7f5bcc86a15b49e4
 
 # Social Sharing
 twitter:
@@ -97,45 +99,60 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : "google-gtag" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
+    tracking_id          : UA-158746697-1
     anonymize_ip         : # true, false (default)
+
 
 # Site Author
 author:
-  name             : *name # *name is a YAML reference pointing to the &anchor earlier
-  avatar           : "/assets/images/bluetigero.jpg"
-  bio              : "새로운 기술과 게임을 좋아합니다. 흰머리가 덥수룩하고 게을러서 백발코더 랍니다."
-  location         : "Republic of Korea"
+  name             : "meuheuhe"
+  avatar           : "/assets/img/profile_14.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "천재 프로그래머" # "I am an **amazing** person."
+  location         : # "성남"
+  email            : 
   links:
-#    - label: "Made Mistakes"
-#      icon: "fas fa-fw fa-link"
-#      url: "https://mademistakes.com"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: mailto:jhlovv@gmail.com # url: mailto:your.name@email.com
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      # url: "https://your-website.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/_wonseok_"
+      # url: "https://twitter.com/"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url: "https://www.facebook.com/jaehyun.choi.7"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/wonseoko"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin-in"
-      url: "https://www.linkedin.com/in/wonseoko/"
-
+      url: "https://github.com/jhlov"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://www.instagram.com/jhlovv/"
 
 # Site Footer
 footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/_wonseok_"
+      # url:
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url: "https://www.facebook.com/jaehyun.choi.7"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/wonseoko"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin-in"
-      url: "https://www.linkedin.com/in/wonseoko/"
-
+      # url:
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
+      # url:
+    - label: "Bitbucket"
+      icon: "fab fa-fw fa-bitbucket"
+      # url:
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      # url:
 
 
 # Reading Files
@@ -163,11 +180,12 @@ exclude:
   - log
   - node_modules
   - package.json
+  - package-lock.json
   - Rakefile
   - README
   - tmp
-  - x-pages
-  - x-posts
+  - /docs # ignore Minimal Mistakes /docs
+  - /test # ignore Minimal Mistakes /test
 keep_files:
   - .git
   - .svn
@@ -195,145 +213,16 @@ kramdown:
   enable_coderay: false
 
 
-# Collections
-collections:
-  docs:
-    output: true
-    permalink: /:collection/:path/
-  recipes:
-    output: true
-    permalink: /:collection/:path/
-  pets:
-    output: true
-    permalink: /:collection/:path/
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
-
-
-# Defaults
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      show_date: true
-      comments: true
-      share: true
-      related: true
-      toc: true
-      toc_sticky: true
-  # _pages
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-      author_profile: true
-  # _docs
-  - scope:
-      path: ""
-      type: docs
-    values:
-      layout: single
-      read_time: false
-      author_profile: false
-      share: false
-      comments: false
-      sidebar:
-        nav: "docs"
-  # rpi4cluster
-  - scope:
-      path: "rpi4cluster"
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      show_date: true
-      comments: true
-      share: true
-      related: true
-      toc: true
-      toc_sticky: true
-      sidebar:
-        nav: "rpi4cluster"      
-      header:
-        teaser: /assets/images/unsplash/rpi4-rZKdS0wI8Ks.jpg
-        overlay_image: /assets/images/unsplash/rpi4-rZKdS0wI8Ks.jpg
-        overlay_filter: 0.4
-        caption: "Photo credit: [**Unsplash**](https://unsplash.com/photos/rZKdS0wI8Ks)"
-  # jekyll
-  - scope:
-      path: "jekyll"
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      show_date: true
-      comments: true
-      share: true
-      related: true
-      toc: true
-      toc_sticky: true
-      # header:
-      #   teaser: /assets/images/unsplash/rpi4-rZKdS0wI8Ks.jpg
-      #   overlay_image: /assets/images/unsplash/rpi4-rZKdS0wI8Ks.jpg
-      #   overlay_filter: 0.4
-      #   caption: "Photo credit: [**Unsplash**](https://unsplash.com/photos/rZKdS0wI8Ks)"
-  # owaf
-  - scope:
-      path: "owaf"
-    values:
-      layout: single
-      author_profile: false
-      read_time: true
-      show_date: true
-      comments: true
-      share: true
-      related: true
-      toc: true
-      toc_sticky: true
-      sidebar:
-        nav: "owaf"      
-      header:
-        overlay_image: /assets/images/unsplash/cpp-UjJWhMerJx0.jpg
-        overlay_filter: 0.4
-        caption: "Photo credit: [**Unsplash**](https://unsplash.com/photos/UjJWhMerJx0)"
-  # portfolio
-  - scope:
-      path: ""
-      type: "portfolio"
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      show_date: false
-      comments: true
-      share: true
-      related: true
-      toc: false
-      toc_sticky: true
-      classes: wide
-      header:
-      #   teaser: /assets/images/unsplash/rpi4-rZKdS0wI8Ks.jpg
-        overlay_image: https://source.unsplash.com/featured/?portfolio
-        overlay_filter: 0.4
-        caption: "Photo credit: [**Unsplash**](https://source.unsplash.com/featured/?portfolio)"
-
 # Sass/SCSS
 sass:
   sass_dir: _sass
-  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
 
 # Outputting
-permalink: /:categories/:title/
-# paginate: 5 # amount of posts to show
-# paginate_path: /page:num/
+permalink: /:title/ # /:categories/:title/
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
 timezone: Asia/Seoul # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
@@ -343,9 +232,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
-  - jemoji
   - jekyll-include-cache
-  - jekyll-algolia
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -353,9 +240,7 @@ whitelist:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
-  - jemoji
   - jekyll-include-cache
-  - jekyll-algolia
 
 
 # Archives
@@ -388,8 +273,36 @@ tag_archive:
 
 
 # HTML Compression
-# - http://jch.penibelst.de/
+# - https://jch.penibelst.de/
 compress_html:
   clippings: all
   ignore:
     envs: development
+
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: false
+      read_time: false
+      comments: true # true
+      share: true
+      related: true
+      sidebar_category: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: false
+      sidebar_category: true
+
+# custom
+category_dir: categories/
+tag_dir: tags/
