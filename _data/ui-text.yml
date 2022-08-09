@@ -10,11 +10,11 @@ en: &DEFAULT_EN
   page                       : "Page"
   pagination_previous        : "Previous"
   pagination_next            : "Next"
-  breadcrumb_home_label      : "Home"
+  breadcrumb_home_label      : "🌝Home"
   breadcrumb_separator       : "/"
-  menu_label                 : "Toggle menu"
+  menu_label                 : "See more"
   search_label               : "Toggle search"
-  toc_label                  : "On this page"
+  toc_label                  : "C O N T E N T S"
   ext_link_label             : "Direct link"
   less_than                  : "less than"
   minute_read                : "minute read"
@@ -22,7 +22,7 @@ en: &DEFAULT_EN
   meta_label                 :
   tags_label                 : "Tags:"
   categories_label           : "Categories:"
-  date_label                 : "Updated:"
+  date_label                 : "Date:"
   comments_label             : "Leave a comment"
   comments_title             : "Comments"
   more_label                 : "Learn more"
@@ -589,9 +589,9 @@ ko: &DEFAULT_KO
   pagination_next            : "다음"
   breadcrumb_home_label      : "Home"
   breadcrumb_separator       : "/"
-  menu_label                 : "토글 메뉴"
+  menu_label                 : "카테고리 Click"
   search_label               :
-  toc_label                  : "On This Page"
+  toc_label                  : "목차"
   ext_link_label             : "직접 링크"
   less_than                  : "최대"
   minute_read                : "분 소요"
@@ -599,8 +599,8 @@ ko: &DEFAULT_KO
   meta_label                 :
   tags_label                 : "태그:"
   categories_label           : "카테고리:"
-  date_label                 : "업데이트:"
-  comments_label             : "댓글남기기"
+  date_label                 : "Date:"
+  comments_label             : "댓글 남기기"
   comments_title             : "댓글"
   more_label                 : "더 보기"
   related_label              : "참고"
@@ -609,7 +609,7 @@ ko: &DEFAULT_KO
   powered_by                 : "Powered by"
   website_label              : "웹사이트"
   email_label                : "이메일"
-  recent_posts               : "최근 포스트"
+  recent_posts               : "Recent Posts"
   undefined_wpm              : "Undefined parameter words_per_minute at _config.yml"
   comment_form_info          : "이메일은 공개되지 않습니다. 작성 필요 필드:"
   comment_form_comment_label : "댓글"
@@ -940,33 +940,33 @@ id-ID:
 # Vietnamese
 # ----------
 vi: &DEFAULT_VI
-  skip_links                 :
-  skip_primary_nav           :
-  skip_content               :
-  skip_footer                :
+  skip_links                 : "Đường dẫn tắt"
+  skip_primary_nav           : "Nhảy tới thanh điều hướng"
+  skip_content               : "Nhảy tới nội dung"
+  skip_footer                : "Nhảy tới chân trang"
   page                       : "Trang"
   pagination_previous        : "Trước"
-  pagination_next            : "Sau"
+  pagination_next            : "Kế tiếp"
   breadcrumb_home_label      : "Trang chủ"
   breadcrumb_separator       : "/"
   menu_label                 : "Menu"
-  search_label               :
+  search_label               : "Tìm kiếm"
   toc_label                  : "Tại trang này"
   ext_link_label             : "Đường dẫn trực tiếp"
-  less_than                  : "nhỏ hơn"
-  minute_read                : "phút đọc"
+  less_than                  : "chỉ cần"
+  minute_read                : "phút để đọc"
   share_on_label             : "Chia sẻ tại"
   meta_label                 :
-  tags_label                 : "Nhãn:"
-  categories_label           : "Chủ đề:"
-  date_label                 : "Cập nhật:"
+  tags_label                 : "Thẻ:"
+  categories_label           : "Danh mục:"
+  date_label                 : "Ngày cập nhật:"
   comments_label             : "Để lại bình luận"
   comments_title             : "Bình luận"
   more_label                 : "Mở rộng"
   related_label              : "Có thể bạn cũng thích"
   follow_label               : "Theo dõi:"
   feed_label                 : "Feed"
-  powered_by                 : "Được hỗ trợ bởi"
+  powered_by                 : "Xây dựng trên nền tảng"
   website_label              : "Website"
   email_label                : "Email"
   recent_posts               : "Bài viết mới"
@@ -982,7 +982,7 @@ vi: &DEFAULT_VI
   comment_success_msg        : "Cảm ơn bạn đã bình luận! Bình luận sẽ xuất hiện sau khi được duyệt."
   comment_error_msg          : "Rất tiếc, có lỗi trong việc gửi bình luận. Hãy đảm bảo toàn bộ các phần bắt buộc đã được điền đầy đủ và thử lại."
   loading_label              : "Đang tải..."
-  search_label_text          :
+  search_label_text          : "Nhập từ khóa cần tìm..."
   search_placeholder_text    : "Nhập từ khóa cần tìm..."
   results_found              : "Kết quả tìm được"
   back_to_top                : "Lên đầu trang"
@@ -1555,7 +1555,7 @@ hi: &DEFAULT_HI
   back_to_top                : "शीर्ष पर वापस"
 hi-IN:
   <<: *DEFAULT_HI
-  
+
 # Catalan
 # --------------
 ca: &DEFAULT_CA
@@ -1607,7 +1607,156 @@ ca: &DEFAULT_CA
   back_to_top                : "Torna a dalt"
 ca-ES:
   <<: *DEFAULT_CA
-  
+
+# Irish (Gaeilge)
+# --------------
+ga: &DEFAULT_GA
+  skip_links                 : "Léim naisc"
+  skip_primary_nav           : "Léim chuig príomh naiscleanúint"
+  skip_content               : "Léim chuig inneachar"
+  skip_footer                : "Léim chuig buntásc"
+  page                       : "Leathanach"
+  pagination_previous        : "Leathanach roimhe sin"
+  pagination_next            : "Céad leathanach eile"
+  breadcrumb_home_label      : "Baile"
+  breadcrumb_separator       : "/"
+  menu_label                 : "Scorán roghchlár"
+  search_label               : "Scorán cuardach"
+  toc_label                  : "Ar an leathanach seo"
+  ext_link_label             : "Nasc díreach"
+  less_than                  : "níos lú na"
+  minute_read                : "a léamh"
+  share_on_label             : "Roinn ar"
+  meta_label                 :
+  tags_label                 : "Clibeanna:"
+  categories_label           : "Catagoírí:"
+  date_label                 : "Nuashonraíodh:"
+  comments_label             : "Fág trácht"
+  comments_title             : "Tráchtanna"
+  more_label                 : "Foghlaim níos mó"
+  follow_label               : "Lean:"
+  feed_label                 : "Feed"
+  powered_by                 : "Ag fáil cumhacht as"
+  website_label              : "Suíomh gréasáin"
+  email_label                : "R-phost"
+  recent_posts               : "Postálacha le deanaí"
+  comment_form_comment_label : "Trácht"
+  comment_form_name_label    : "Ainm"
+  comment_form_email_label   : "Ríomhsheoladh"
+  comment_form_website_label : "Suíomh gréasáin (roghnach)"
+  comment_btn_submit         : "Cuir isteach trácht"
+  comment_btn_submitted      : "Curtha isteach"
+  loading_label              : "Lódáil..."
+  search_label_text          : "Cuir do chuardach isteach..."
+  search_placeholder_text    : "Cuir do chuardach isteach..."
+  results_found              : "Torthaí aimsithe"
+  back_to_top                : "Ar ais go barr"
+ga-IE:
+  <<: *DEFAULT_GA
+
+
+# Finnish / Suomi
+# -----------------
+fi: &DEFAULT_FI
+  skip_links                 : "Ohita linkit"
+  skip_primary_nav           : "Hyppää pää navigaatioon"
+  skip_content               : "Hyppää sisältöön"
+  skip_footer                : "Hyppää alareunaan"
+  page                       : "Sivu"
+  pagination_previous        : "Edellinen"
+  pagination_next            : "Seuraava"
+  breadcrumb_home_label      : "Etusivu"
+  breadcrumb_separator       : "/"
+  menu_label                 : "Avaa valikko"
+  search_label               : "Avaa haku"
+  toc_label                  : "Tällä sivulla"
+  ext_link_label             : "Suora linkki"
+  less_than                  : "vähemmän kuin"
+  minute_read                : "lukuaika"
+  share_on_label             : "Jaa"
+  meta_label                 :
+  tags_label                 : "Tagit:"
+  categories_label           : "Kategoriat:"
+  date_label                 : "Päivitetty:"
+  comments_label             : "Jätä kommentti"
+  comments_title             : "Kommentit"
+  more_label                 : "Lisää"
+  related_label              : "Voit olla kiinnostunut myös"
+  follow_label               : "Seuraa:"
+  feed_label                 : "Syöte"
+  powered_by                 : "Voimanlähteenä"
+  website_label              : "Websivu"
+  email_label                : "Email"
+  recent_posts               : "Viimeisimmät postaukset"
+  undefined_wpm              : "words_per_minute asetusta ei ole määritelty _config.yml tiedostossa"
+  comment_form_info          : "Your email address will not be published. Required fields are marked"
+  comment_form_comment_label : "Kommentti"
+  comment_form_md_info       : "Tukee markdown muotoilua."
+  comment_form_name_label    : "Nimi"
+  comment_form_email_label   : "Email osoite"
+  comment_form_website_label : "Webbisivu (vapaaehtoinen)"
+  comment_btn_submit         : "Lähetä"
+  comment_btn_submitted      : "Lähetetty"
+  comment_success_msg        : "Kiitos kommentista, se julkaistaan tällä sivulla moderoinnin jälkeen."
+  comment_error_msg          : "Tarkista että olet täyttänyt kaikki kentät ja yritä uudelleen."
+  loading_label              : "Ladataan..."
+  search_label_text          : "Hakusana..."
+  search_placeholder_text    : "Hakusana..."
+  results_found              : "Tulosta"
+  back_to_top                : "Ylös"
+
+# Myanmar (Burmese)
+# -----------------
+my: &DEFAULT_MY
+  skip_links                 : "လင့်များကို​ကျော်ပါ။"
+  skip_primary_nav           : "မူလအညွှန်းသို့​ကျော်ပါ။"
+  skip_content               : "အကြောင်းအရာသို့ကျော်ပါ။"
+  skip_footer                : "အောက်ခြေသို့ကျော်ပါ။"
+  page                       : "စာမျက်နှာ"
+  pagination_previous        : "ရှေ့တစ်ခု"
+  pagination_next            : "နောက်တစ်ခု"
+  breadcrumb_home_label      : "ပင်မစာမျက်နှာ"
+  breadcrumb_separator       : "/"
+  menu_label                 : "မီနူး ဖွင့်၊ပိတ်"
+  search_label               : "ရှာ​ဖွေရန် ဖွင့်၊ပိတ်"
+  toc_label                  : "ဒီစာမျက်နှာတွင်"
+  ext_link_label             : "တိုက်ရိုက်လင့်"
+  less_than                  : "ဖတ်ရန်ကြာချိန်"
+  minute_read                : "မိနစ်"
+  share_on_label             : "မျှဝေပါ။"
+  meta_label                 :
+  tags_label                 : "အမှတ်အသားများ -"
+  categories_label           : "အမျိုးအစားများ -"
+  date_label                 : "ပြင်ဆင်ပြီး -"
+  comments_label             : "မှတ်ချက်တစ်ခုချန်ထားပါ။"
+  comments_title             : "မှတ်ချက်များ"
+  more_label                 : "ပိုမိုသိရှိရန်"
+  related_label              : "သင်နှစ်သက်နိုင်​သော"
+  follow_label               : "သတင်းလိုက်ယူရန် -"
+  feed_label                 : "Feed ယူရန် -"
+  powered_by                 : "ပံ့ပိုးသည်"
+  website_label              : "ဝဘ်ဆိုက်"
+  email_label                : "အီးမေးလ်"
+  recent_posts               : "လတ်တလောရေးသားချက်များ"
+  undefined_wpm              : "_config.yml မှာ words_per_minute ကိုမသတ်မှတ်ထားပါ။"
+  comment_form_info          : "သင့်အီးမေးလ်လိပ်စာကို​ဖော်ပြသွားမည်မဟုတ်ပါ။ လိုအပ်သောဖြည့်စွက်ရန်​နေရာများကို အမှတ်အသားပြထားပါသည်။"
+  comment_form_comment_label : "မှတ်ချက်"
+  comment_form_md_info       : "Markdown ကိုထောက်ပံ့သည်။"
+  comment_form_name_label    : "နာမည်"
+  comment_form_email_label   : "အီးမေးလိပ်စာ"
+  comment_form_website_label : "ဝဘ်ဆိုက် (မဖြည့်စွက်လည်းရသည်)"
+  comment_btn_submit         : "မှတ်ချက်တင်ပါ"
+  comment_btn_submitted      : "တင်သွင်းလိုက်သည်"
+  comment_success_msg        : "မှတ်ချက်ပေးတဲ့အတွက်ကျေးဇူးတင်ပါတယ်။ ၎င်းကိုအတည်ပြုပြီးသည့်အခါ ဝဘ်ဆိုက်ပေါ်တွင်ပြလိမ့်မည်။"
+  comment_error_msg          : "တောင်းပန်ပါတယ်။ သင့်တင်သွင်းမှုတွင်အမှားတစ်ခုရှိခဲ့သည်။ ကျေးဇူးပြုပြီးလိုအပ်သောဖြည့်စွက်ရန်​နေရာအားလုံးဖြည့်ပြီးပါကထပ်မံကြိုးစားပါ။"
+  loading_label              : "တင်နေသည်..."
+  search_label_text          : "သင့်ရှာဖွေရေးဝေါဟာရကိုရိုက်ထည့်ပါ..."
+  search_placeholder_text    : "သင့်ရှာဖွေရေးဝေါဟာရကိုရိုက်ထည့်ပါ..."
+  results_found              : "ရလဒ်(များ)ကိုတွေ့ရှိခဲ့သည်"
+  back_to_top                : "အပေါ်သို့ပြန်သွား"
+my-MM:
+  <<: *DEFAULT_MY
+
 # Another locale
 # --------------
 #
