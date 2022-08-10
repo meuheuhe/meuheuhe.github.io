@@ -75,7 +75,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  "/assets/images/my-cat.jpg" # Open Graph/Twitter default site image
+og_image                 :  "/assets/images/me.jpeg" # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -93,7 +93,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "휘발성 머리를 위한 저장공간"
+  name             : "휘발성 머리를 위한 log"
   avatar           : "https://user-images.githubusercontent.com/42318591/108615416-2e1bb580-7447-11eb-8a54-6338e53ce625.png"
   bio              : "반갑습니다 :)"
   #location         : "Seoul, South Korea"
