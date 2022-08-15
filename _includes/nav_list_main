@@ -62,7 +62,7 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "pandas" %}
+                    {% if category[0] == "python-pandas" %}
                         <li><a href="/categories/pandas" class="">Pandas ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
