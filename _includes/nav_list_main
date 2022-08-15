@@ -62,15 +62,8 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "DataStructure" %}
+                    {% if category[0] == "pandas" %}
                         <li><a href="/categories/pandas" class="">Pandas({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "DataStructure2" %}
-                        <li><a href="/categories/data-structure2" class="">tensorflow({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
