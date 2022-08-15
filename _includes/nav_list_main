@@ -55,14 +55,14 @@
             </ul> -->
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "python-numpy" %}
-                        <li><a href="/categories/numpy" class="">Numpy ({{category[1].size}})</a></li>
+                    {% if category[0] == "numpy" %}
+                        <li><a href="/categories/python-numpy" class="">Numpy ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "python-pandas" %}
+                    {% if category[0] == "pandas" %}
                         <li><a href="/categories/pandas" class="">Pandas ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
