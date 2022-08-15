@@ -2,7 +2,7 @@
 title:  "DataFrame 여러개 합치기" 
 
 categories: 
-  - python
+  - pandas
   tags:
   - [Python, Padnas]
 
