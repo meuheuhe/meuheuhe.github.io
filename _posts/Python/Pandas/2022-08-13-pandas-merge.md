@@ -4,7 +4,7 @@ title:  "DataFrame 여러개 합치기"
 categories: 
   - pandas
   tags:
-  - [Python, Padnas]
+  - [python, Padnas]
 
 toc: true
 toc_sticky: true
