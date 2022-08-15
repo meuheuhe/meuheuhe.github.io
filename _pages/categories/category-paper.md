@@ -1,7 +1,7 @@
 ---
-title: "C # 프로그래밍"
+title: "논문 리뷰"
 layout: archive
-permalink: categories/csharp
+permalink: categories/paper
 author_profile: true
 sidebar_main: true
 ---

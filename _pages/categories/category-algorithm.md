@@ -1,7 +1,7 @@
 ---
-title: "알고리즘 구현 (with C++)"
+title: "Rookiss님의 '[MMORPG 게임 개발 시리즈] Part4: 게임 서버 강의 필기"
 layout: archive
-permalink: categories/algorithm
+permalink: categories/coding-test
 author_profile: true
 sidebar_main: true
 ---
@@ -10,5 +10,6 @@ sidebar_main: true
 
 ***
 
-{% assign posts = site.categories.Algorithm %}
+{% assign posts = site.categories.Server1 %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
+

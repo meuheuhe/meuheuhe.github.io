@@ -1,7 +1,7 @@
 ---
-title: "Rookiss님의 '[MMORPG 게임 개발 시리즈] Part4: 게임 서버 강의 필기"
+title: "Python"
 layout: archive
-permalink: categories/server1
+permalink: categories/Python
 author_profile: true
 sidebar_main: true
 ---
@@ -10,5 +10,5 @@ sidebar_main: true
 
 ***
 
-{% assign posts = site.categories.Server1 %}
+{% assign posts = site.categories.Python %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
