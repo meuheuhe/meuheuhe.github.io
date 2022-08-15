@@ -55,7 +55,7 @@
             </ul> -->
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "python-numpy" %}
+                    {% if category[0] == "numpy" %}
                         <li><a href="/categories/python-numpy" class="">Numpy ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
