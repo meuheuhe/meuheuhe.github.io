@@ -46,24 +46,24 @@
             </ul>
         
         <span class="nav__sub-title">python</span>
-            <ul>
+            <!-- <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "coding" %}
                         <li><a href="/categories/python-coding" class="">프로그래밍 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
-            </ul>
+            </ul> -->
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "numpy" %}
-                        <li><a href="/categories/python-numpy" class="">Numpy ({{category[1].size}})</a></li>
+                    {% if category[0] == "python-numpy" %}
+                        <li><a href="/categories/numpy" class="">Numpy ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "pandas" %}
-                        <li><a href="/categories/python-pandas" class="">Pandas ({{category[1].size}})</a></li>
+                    {% if category[0] == "python-pandas" %}
+                        <li><a href="/categories/pandas" class="">Pandas ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
