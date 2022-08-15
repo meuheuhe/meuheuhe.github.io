@@ -4,7 +4,7 @@ title:  "numpy test"
 categories: 
   - numpy
   tags:
-  - [Python, numpy]
+  - [python, numpy]
 
 toc: true
 toc_sticky: true

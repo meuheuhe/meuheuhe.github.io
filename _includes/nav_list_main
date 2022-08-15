@@ -70,8 +70,8 @@
         <span class="nav__sub-title">Paper</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Server1" %}
-                        <li><a href="/categories/server1" class="">time series ({{category[1].size}})</a></li>
+                    {% if category[0] == "paper" %}
+                        <li><a href="/categories/paper" class="">time series ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
