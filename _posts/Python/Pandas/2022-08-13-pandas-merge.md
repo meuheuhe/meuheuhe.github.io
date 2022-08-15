@@ -1,26 +1,18 @@
+---
 title:  "DataFrame 여러개 합치기" 
 
 categories: 
-
-- python
-
+  - python
   tags:
-
-- [Python, Padnas]
+  - [Python, Padnas]
 
 toc: true
 toc_sticky: true
 
-date: 
+date: 2022-08-13
 
 last_modified_at: 2022-08-13
 ---
-
----
-
-
-
-
 
 
 
