@@ -20,7 +20,7 @@ title                    : "Meuheuhe"
 title_separator          : "-"
 subtitle                 : "meuheuhe.log" # site tagline that appears below site title in masthead
 name                     : "Kijung"
-description              : "잘 까먹어서 기록하는 용도2" # "An amazing website."
+description              : "잘 까먹어서 기록하는 용도" # "An amazing website."
 url                      : "https://meuheuhe.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "meuheuhe/meuheuhe.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -93,7 +93,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "휘발성 머리를 위한 공간"
+  name             : "휘발성 머리를 위한 공간 2"
   avatar           : "https://user-images.githubusercontent.com/26536985/184479682-aa540303-7a28-40d4-8a10-02520415e59d.jpeg"
   bio              : "반갑습니다 :)"
   #location         : "Seoul, South Korea"
