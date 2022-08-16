@@ -1,7 +1,7 @@
 ---
 title: "numpy"
 layout: archive
-permalink: categories/python-numpy
+permalink: categories/numpy
 author_profile: true
 sidebar_main: true
 ---

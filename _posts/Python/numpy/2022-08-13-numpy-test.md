@@ -1,16 +1,15 @@
 ---
-title:  "numpy test" 
+title:  "[numpy] tes" 
 
 categories: 
   - numpy
-  tags:
+tags:
   - [python, numpy]
 
 toc: true
 toc_sticky: true
 
 date: 2022-08-13
-
 last_modified_at: 2022-08-13
 ---
 
