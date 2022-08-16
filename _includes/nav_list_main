@@ -45,7 +45,7 @@
                 {% endfor %}
             </ul>
         
-        <span class="nav__sub-title">python</span>
+        <span class="nav__sub-title">python 1</span>
             <!-- <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "coding" %}
