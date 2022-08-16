@@ -1,5 +1,5 @@
 ---
-title: "pandas test"
+title: "[pandas] test"
 layout: archive
 permalink: categories/pandas
 author_profile: true
