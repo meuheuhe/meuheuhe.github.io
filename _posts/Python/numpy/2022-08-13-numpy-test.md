@@ -1,5 +1,5 @@
 ---
-title:  "[numpy] tes" 
+title:  "[numpy] numpy를 사용해야하는 이유" 
 
 categories: 
   - numpy
@@ -15,23 +15,27 @@ last_modified_at: 2022-08-13
 
 
 
-#### merge
+## numpy 란?
+
+- Numerical Python의 약자로 Python에서 대규모 다차원 배열을 다룰 수 있게 도와주는 라이브러리이다.
+  데이터 대부분은 숫자 배열로 볼 수 있기 때문이다.
+
+
+
+## numpy를 사용하는 이유
+
+- Python에서 list를 사용하기위해 제공하는 함수보다 효율적인 메모리 관리와 빠른 연산을 지원하기 때문이다.
+
+
+
+## List를 numpy array로 만드는 방법
+
+#### 
 
 ~~~python
-#데이터 프레임 합치기
-#두 데이터 프레임을 각 데이터에 존재하는 고유값(key)을 기준으로 병합할 때 사용한다.
-#how = inner -> 교집합으로 공통 column을 기준으로 join을 하게된다.
-#      outer -> 옵션을 줘서 id기준으로 합치되, 어르한쪽에라도 없는 데이터가 없는경우 NaN값이 지정된다.
-#on = column_name
-pd.merge(df_left, df_right, how = 'inner', on=None) #default
+import numpy as np
 
-#n개이상 데이터 프레임하는 방법
-from functools import reduce
-#여러 개의 데이터를 대상으로 주로 누적 집계를 내기 위해서 사용한다.
-#reduce(집계 함수, 순회 가능한 데이터[, 초기값])
-
-data_frames = [df1, df2, df3]
-df_merged = reduce(lambda left, right: pd.merge(left, right, on = ['column_key'], how = 'outer'), data_frames)
+np.array([1,2,3,4,5]) #list를 넣어주면 array로 반환해준다.
 ~~~
 
 
