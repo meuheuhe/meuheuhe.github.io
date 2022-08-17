@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "aqua" # "default"  "air", "aqua", "contrast", , "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "default" # "default"  "air", "aqua", "contrast", , "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "ko-KR"
@@ -41,7 +41,7 @@ comments:
     num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
   utterances:
-    theme                : "photon-light" # "github-light" (default), "github-dark"
+    theme                : "photon-dark" # "github-light" (default), "github-dark"
     issue_term           : "pathname" # "pathname" (default)
   staticman:
     branch               : # "master"
