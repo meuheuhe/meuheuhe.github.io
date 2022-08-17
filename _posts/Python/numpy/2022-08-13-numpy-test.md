@@ -30,7 +30,7 @@ last_modified_at: 2022-08-13
 
 ## List를 numpy array로 만드는 방법
 
-#### 
+
 
 ~~~python
 import numpy as np

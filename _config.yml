@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "air" # "default"  "air", "aqua", "contrast", , "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "aqua" # "default"  "air", "aqua", "contrast", , "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "ko-KR"
@@ -41,7 +41,7 @@ comments:
     num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
   utterances:
-    theme                : "photon-dark" # "github-light" (default), "github-dark"
+    theme                : "photon-light" # "github-light" (default), "github-dark"
     issue_term           : "pathname" # "pathname" (default)
   staticman:
     branch               : # "master"
@@ -95,7 +95,7 @@ analytics:
 author:
   name             : "휘발성 머리를 위한 공간"
   avatar           : "https://user-images.githubusercontent.com/26536985/184479682-aa540303-7a28-40d4-8a10-02520415e59d.jpeg"
-  # bio              : "반갑습니다."
+  bio              : " "
   #location         : "Seoul, South Korea"
   links:
     - label: "Email"
