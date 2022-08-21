@@ -4,7 +4,7 @@ title:  "[python] pandas merge 여러개 합치기"
 categories: 
   - pandas
 tags:
-  - [python, Padnas]
+  - [python, Padnas, dataframe]
 
 toc: true
 toc_sticky: true
