@@ -20,7 +20,8 @@ last_modified_at: 2022-08-21
 
 ## Unnamed: 0 이 생기는 이유
 
-- 보통 csv파일을 불러 올 때, 맨 처음 컬럼의 값이 비어져 있는 경우에 Unnamed: 0컬럼이 생기게 된다.![스크린샷 2022-08-21 오후 10.39.03](/Users/kimkijung/Library/Application Support/typora-user-images/스크린샷 2022-08-21 오후 10.39.03.png)
+- 보통 csv파일을 불러 올 때, 맨 처음 컬럼의 값이 비어져 있는 경우에 Unnamed: 0컬럼이 생기게 된다.
+  <img width="551" alt="스크린샷 2022-08-21 오후 10 39 03" src="https://user-images.githubusercontent.com/26536985/185797866-f3557663-1d29-4e7c-a1f2-16da96becfbf.png">
 
 ```python
 import pandas as pd
@@ -30,7 +31,7 @@ df = pd.read_csv('test.csv')
 df
 ```
 
-![스크린샷 2022-08-21 오후 10.46.45](/Users/kimkijung/Library/Application Support/typora-user-images/스크린샷 2022-08-21 오후 10.46.45.png)
+<img width="212" alt="스크린샷 2022-08-21 오후 10 46 45" src="https://user-images.githubusercontent.com/26536985/185797834-d9c62aae-8b2c-4fe5-ad8f-65d21425ab29.png">
 
 ## 제거하는 방법
 
@@ -44,7 +45,7 @@ df = pd.read_csv('test.csv', index_col=0)
 df
 ~~~
 
-![스크린샷 2022-08-21 오후 11.32.45](/Users/kimkijung/Library/Application Support/typora-user-images/스크린샷 2022-08-21 오후 11.32.45.png)
+<img width="130" alt="스크린샷 2022-08-21 오후 11 32 45" src="https://user-images.githubusercontent.com/26536985/185797777-61d74bbb-1010-48d5-a41e-dcbfa5cd30ad.png">
 
 ### 2. 직접 Unnamed 컬럼 제거
 
@@ -58,7 +59,7 @@ df.drop(['Unnamed: 0'], axis = 1, inplace = True)
 df
 ~~~
 
-![스크린샷 2022-08-21 오후 11.35.45](/Users/kimkijung/Library/Application Support/typora-user-images/스크린샷 2022-08-21 오후 11.35.45.png)
+<img width="130" alt="스크린샷 2022-08-21 오후 11 32 45" src="https://user-images.githubusercontent.com/26536985/185797777-61d74bbb-1010-48d5-a41e-dcbfa5cd30ad.png">
 
 추가로 함수안에 inplace = True 옵션을 주게 되면, 따로 변수에 직접 넣는 코드를 추가하지 않아도 된다.
 
