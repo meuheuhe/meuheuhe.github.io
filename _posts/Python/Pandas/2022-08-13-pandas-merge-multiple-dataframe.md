@@ -1,5 +1,5 @@
 ---
-title:  "[DataFrame] merge 여러개 합치기" 
+title:  "[python] pandas merge 여러개 합치기" 
 
 categories: 
   - pandas
