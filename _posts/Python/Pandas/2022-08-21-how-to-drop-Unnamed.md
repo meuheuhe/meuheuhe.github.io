@@ -20,8 +20,9 @@ last_modified_at: 2022-08-21
 
 ## Unnamed: 0 이 생기는 이유
 
-- 보통 csv파일을 불러 올 때, 맨 처음 컬럼의 값이 비어져 있는 경우에 Unnamed: 0컬럼이 생기게 된다.
-  <img width="551" alt="스크린샷 2022-08-21 오후 10 39 03" src="https://user-images.githubusercontent.com/26536985/185797866-f3557663-1d29-4e7c-a1f2-16da96becfbf.png">
+- 보통 csv파일을 불러 올 때, 맨 처음 셀(A1)의 값이 비어져 있는 경우에 Unnamed: 0컬럼이 생기게 된다.
+
+<img width="551" alt="스크린샷 2022-08-21 오후 10 39 03" src="https://user-images.githubusercontent.com/26536985/185797866-f3557663-1d29-4e7c-a1f2-16da96becfbf.png">
 
 ```python
 import pandas as pd
