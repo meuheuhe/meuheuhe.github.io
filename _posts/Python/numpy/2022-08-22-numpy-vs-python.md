@@ -1,10 +1,10 @@
 ---
-title:  "[python] python vs numpy 속도 비교" 
+title:  "[numpy] python vs numpy 속도 비교" 
 
 categories: 
   - numpy
 tags:
-  - [python, Numpy]
+  - [python, numpy]
 
 toc: true
 toc_sticky: true

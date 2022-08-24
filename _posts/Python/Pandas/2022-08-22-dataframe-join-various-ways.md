@@ -4,7 +4,7 @@ title:  "[python] pandas dataframe 합치기"
 categories: 
   - pandas
 tags:
-  - [python, Padnas, dataframe]
+  - [python, pandas, dataframe]
 
 toc: true
 toc_sticky: true

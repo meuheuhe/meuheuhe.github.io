@@ -4,7 +4,7 @@ title:  "[python] pandas Unnamed : 0 컬럼 제거"
 categories: 
   - pandas
 tags:
-  - [python, Padnas, dataframe]
+  - [python, pandas, dataframe]
 
 toc: true
 toc_sticky: true
